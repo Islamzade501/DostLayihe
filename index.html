@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Menu</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Header hissəsi -->
+    <header>
+        <img src="./PhotoMain (1).jpg" alt="Main Background" class="main-foto">
+        <nav>
+            <!-- Burger menü ikonu -->
+            <div class="burger-menu" id="burger-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <ul class="menu" id="menu">
+                <li><a href="#">Ana Səhifə</a></li>
+                <li><a href="#form-section">Sən də Duyğularını Bizimlə Paylaş</a></li>
+                <li><a href="#about">Haqqımızda</a></li>
+                <li><a href="#qisamelumat">Qısa Məlumat</a></li>
+                <li><a href="#">Layihə</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Form hissəsi -->
+    <section id="form-section" class="form-section">
+        <h2>Sən də Duyğularını Bizimlə Paylaş</h2>
+        <form action="#" method="POST">
+            <label for="name">Ad Soyad:</label>
+            <input type="text" id="name" name="name" placeholder="Adınızı daxil edin" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Emailinizi daxil edin" required>
+
+            <label for="message">Mesaj:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Mesajınızı yazın" required></textarea>
+
+            <button type="submit">Göndər</button>
+        </form>
+    </section>
+
+    <!-- About hissəsi -->
+    <section id="about">
+        <div class="about">
+            <h2>Haqqımızda</h2>
+            <p>"Dostla Gələcəyə - Şəxsi İnkişaf və Daxili Güc Layihəsi", Dost agentliyinin dəstəyi ilə həyata keçirilən bir təşəbbüsdür. Bu layihə, iştirakçıların öz daxili güclərini, potensiallarını kəşf etmələrinə və həyat hədəflərinə doğru addımlamalarına dəstək olmaq məqsədini güdür. Biz inanırıq ki, hər bir insanın özünə güvənərək və davamlı inkişafla həyatını daha məqsədli və mənalı şəkildə qurma imkanı var.
+                Layihəmiz, toxumların böyümə prosesindən ilham alır və bu proses vasitəsilə iştirakçılara davamlı inkişafın və sosial dəstəyin əhəmiyyətini çatdırır. Biz könüllülər olaraq, hər bir iştirakçının həyatındakı müxtəlif hədəfləri simvolizə edən toxumlar paylayırıq. Hər toxum cəsarət, sevgi, özünə güvən və digər daxili gücləri təmsil edir. Bu, iştirakçıların özlərini daha yaxşı tanımalarına və həyatlarında irəliləmələrinə kömək edir."</p>
+        </div>
+    </section>
+  
+    <section id="qisamelumat">
+        <div class="qisamelumat">
+          <h2>Qısa Məlumat</h2>
+          <div class="info-item">
+            <img src="/qizilgul.jpg" alt="Şəkil 1" class="info-image">
+            <p class="info-text">Qızılgül – Sevgi və yaxınlıq hissi yaradır. Xüsusilə qırmızı qızılgül ehtirası və romantik duyğuları gücləndirir, ağ qızılgül isə sükunət və təmizlik hissi verir.
+            </p>
+          </div>
+          <div class="info-item">
+            <img src="/lale.jpg" alt="Şəkil 2" class="info-image">
+            <p class="info-text">Lalə – Şənlik və yeni başlanğıc simvolu kimi ruhlandırıcı təsirə malikdir. Sarı lalələr sevinc və enerji verir, qırmızı lalələr isə dərinlik və istək hisslərini gücləndirir.
+            </p>
+          </div>
+          <div class="info-item">
+            <img src="/Lavanda.jpg" alt="Şəkil 3" class="info-image">
+            <p class="info-text">Lavanda – Sakitləşdirici və stressi azaldıcı təsir göstərir. Lavanda ətri insana rahatlıq bəxş edir, yuxunu yaxşılaşdırmağa kömək edir və daxili sülh hissi yaradır.
+            </p>
+          </div>
+          <div class="info-item">
+            <img src="/Nergiz.jpg" alt="Şəkil 4" class="info-image">
+            <p class="info-text">Nərgiz – Pozitivlik və yenilənmə hissi yaradır. İnsanları yeni başlanğıclara həvəsləndirir və özünü kəşf etməyə təşviq edir.
+            </p>
+          </div>
+          <div class="info-item">
+            <img src="/Cobanyastigi.jpg" alt="Şəkil 5" class="info-image">
+            <p class="info-text">Çobanyastığı – Sakitlik və rahatlıq hissi verir. Həm də optimizm yaradır və qəlbdəki narahatlıqları azaldır.
+            </p>
+          </div>
+          <div class="info-item">
+            <img src="/yonca-gubreleme.jpg" alt="Şəkil 5" class="info-image">
+            <p class="info-text">Yonca-Hər yarpağında arzu,ümid və xoşbəxtlik daşıyan nadir bir şans rəmzidir.
+            </p>
+          </div>
+          <div class="info-item">
+            <img src="/benovse.jpeg" alt="Şəkil 5" class="info-image">
+            <p class="info-text">Bənövşə-Sədaqət və gizli məhəbbətin incə rəmzi, sakit sevgini dilə gətirir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div style="text-align: center; padding: 20px;">
+            <h2>Layihəmiz  </h2>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;margin-top: 30px;">
+                <img src="Layihe1.jpg" alt="Üzv 1" style="width: 30%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <img src="layihep1.jpg" alt="Üzv 2" style="width: 30%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+            <h2 style="margin-top: 40px;">Layihə Üzvlərimiz</h2>
+            <div>
+                <img src="Qurup.jpg" alt="Üzv 3" style="width: 30%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+            </div>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;margin-top: 20px;">
+                <img src="Uzv_Lider.jpg" alt="Üzv 1" style="width: 30%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <img src="Layihe_uzv1.jpg" alt="Üzv 2" style="width: 30%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <img src="Layihe_uzv2.jpg" alt="Üzv 3" style="width: 30%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+            </div>
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;margin-top: 20px;">
+                <img src="Layihe_uzv3.jpg" alt="Üzv 1" style="width: 30%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <img src="Layihe_uzv4.jpg" alt="Üzv 2" style="width: 30%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+                <img src="Layihe_uzv5.jpg" alt="Üzv 3" style="width: 30%; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+
+            </div>
+        </div>
+    </section>
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
