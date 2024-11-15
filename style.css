@@ -21,8 +21,7 @@ header {
 
 .main-foto {
     width: 100%;
-    height: 100%;
-    content-visibility: auto;
+    height: 60vh; 
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +39,7 @@ nav {
     justify-content: center;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 20px;
+    padding: 15px 30px; /* Daha az padding ile sıkıştırılabilir */
     border-bottom: 2px solid #ffcc00;
 }
 
@@ -77,7 +76,7 @@ nav {
     width: 100%;
 }
 
-/* Burger Menü Stil */
+/* Burger Menü */
 .burger-menu {
     display: none;
     flex-direction: column;
@@ -91,11 +90,15 @@ nav {
 .burger-menu .bar {
     width: 100%;
     height: 4px;
-    background-color: white;
+    background-color: black;
     border-radius: 5px;
 }
 
+/* Mobil ekran */
 @media (max-width: 768px) {
+    html, body {
+        overflow-x: hidden;
+    }
     .burger-menu {
         display: flex;
     }
@@ -122,7 +125,7 @@ nav {
     }
 }
 
-/* About Hissəsi */
+/* About kısmı */
 section {
     position: relative;
     z-index: 2;
@@ -150,7 +153,7 @@ section {
     color: #666;
 }
 
-/* Form Stil */
+/* Form kısmı */
 .form-section {
     background-color: white;
     width: 100%;
@@ -208,8 +211,7 @@ section {
 .form-section button:hover {
     background-color: #e6b800;
 }
-
-/* Qısa Məlumat Stil */
+/* Qısa Məlumat */
 #qisamelumat {
     padding: 20px;
     background-color: #f4f4f4;
@@ -218,13 +220,37 @@ section {
 
 .qisamelumat h2 {
     margin-bottom: 20px;
+    color: #333; /* Başlık rengini belirledim */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.info-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px; /* Öğeler arasında daha fazla boşluk */
 }
 
 .info-item {
     display: flex;
+    flex-direction: row; /* Görsel ve yazıyı yatayda hizalayacak */
     justify-content: center;
-    gap: 30px;
-    flex-wrap: wrap;
+    align-items: center; /* Her öğeyi ortalayacak */
+    width: 45%; /* Her öğenin genişliğini yüzde 45 olarak ayarladım */
+    background-color: #fff;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.info-item:hover {
+    transform: scale(1.05); /* Hover durumunda öğeyi büyütme efekti */
 }
 
 .info-image {
@@ -232,11 +258,58 @@ section {
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
+    margin-right: 20px; /* Görsel ile metin arasına boşluk */
 }
 
 .info-text {
     font-size: 16px;
     color: #555;
-    text-align: justify;
+    text-align: left; /* Metni sola hizaladım */
     margin-top: 10px;
+}
+
+/* Mobil uyumlu tasarım */
+@media (max-width: 768px) {
+    body{
+        overflow-x:hidden;
+
+    }
+    .info-items {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .info-item {
+        width: 80%; /* Mobilde öğe genişliğini %80 olarak ayarladım */
+        margin-bottom: 20px;
+    }
+
+    .info-image {
+        margin-right: 0; /* Mobilde görselin sağındaki boşluğu kaldırdım */
+        margin-bottom: 15px; /* Görsel ile metin arasına boşluk */
+    }
+
+    .info-text {
+        text-align: center; /* Mobilde metni ortaladım */
+    }
+}
+
+.instagram-logo {
+    width: 50px; /* Logo ölçüsünü istədiyiniz kimi dəyişə bilərsiniz */
+    margin: 10px;
+}
+
+* {
+    text-decoration: none; /* Bütün elementlərə alt xətt əlavə etməmək */
+}
+
+#əlaqə h2 {
+    text-align: center; /* Mətni mərkəzləşdirir */
+}
+
+.social-links {
+    display: flex; /* Sosial media linklərini üfüqi qaydada düzür */
+    justify-content: center; /* Logoları ortalayır */
+    gap: 20px; /* Logolar arasına boşluq əlavə edir */
 }
